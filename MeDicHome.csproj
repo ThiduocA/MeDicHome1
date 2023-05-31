@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{751C8E38-4230-436D-BC59-43448A8D185B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MeDicHome</RootNamespace>
+    <AssemblyName>MeDicHome</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm1.designer.cs">
+      <DependentUpon>HomeForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qlkhoDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlkhoDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Qlykh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qlykh.designer.cs">
+      <DependentUpon>Qlykh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qlynv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qlynv.Designer.cs">
+      <DependentUpon>qlynv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qlynvDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlynvDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="qlysp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qlysp.designer.cs">
+      <DependentUpon>qlysp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qlyspDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlyspDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="qlyspDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlyspDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quanlysanphamDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quanlysanphamDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqlallDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqlallDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm1.resx">
+      <DependentUpon>HomeForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Qlykh.resx">
+      <DependentUpon>Qlykh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qlynv.resx">
+      <DependentUpon>qlynv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qlysp.resx">
+      <DependentUpon>qlysp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="qlkhoDataSet4.xsc">
+      <DependentUpon>qlkhoDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="qlkhoDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>qlkhoDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="qlkhoDataSet4.xss">
+      <DependentUpon>qlkhoDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="qlynvDataSet1.xsc">
+      <DependentUpon>qlynvDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="qlynvDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>qlynvDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="qlynvDataSet1.xss">
+      <DependentUpon>qlynvDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="qlyspDataSet.xsc">
+      <DependentUpon>qlyspDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="qlyspDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>qlyspDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="qlyspDataSet.xss">
+      <DependentUpon>qlyspDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="qlyspDataSet1.xsc">
+      <DependentUpon>qlyspDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="qlyspDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>qlyspDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="qlyspDataSet1.xss">
+      <DependentUpon>qlyspDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="quanlysanphamDataSet.xsc">
+      <DependentUpon>quanlysanphamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="quanlysanphamDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quanlysanphamDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quanlysanphamDataSet.xss">
+      <DependentUpon>quanlysanphamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sqlallDataSet.xsc">
+      <DependentUpon>sqlallDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sqlallDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqlallDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqlallDataSet.xss">
+      <DependentUpon>sqlallDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acer_Wallpaper_02_5000x2813.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-cute-trophy-stickman-png-image_3433865.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-add.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
